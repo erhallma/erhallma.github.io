@@ -1,24 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Hallman</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<h1>Eric's Miscellaneous Math</h1>
-<p>A sample of teaching materials and amusements.</p>
-<ul>
-  <li>UC Berkeley <a href="https://math.berkeley.edu/~ehallman">TA website</a></li>
-  <li>NCSU <a href="https://erhallma.math.ncsu.edu/">postdoc website</a></li>
-  <li><a href="https://scholar.google.com/citations?user=aKWfW44AAAAJ&hl=en&oi=ao">Google Scholar page</a></li>
-  <li><a href="https://www.eric-hallman.com">Recruiter page</a> (under construction) </li>
-</ul>
-<h2>Jupyter notebooks</h2>
-<p>Notebooks can be viewed through the third-party <a href="https://nbviewer.org/github/erhallma/erhallma.github.io/tree/main/notebooks/">Jupyter nbviewer</a></p>
-<p>Truth tables: <a href="notebooks/truth_tables.ipynb">notebook</a></p>
-<p>Taylor series: <a href="notebooks/taylor_series.ipynb">notebook</a></p>
-<p>Summary of my research on trace estimation: <a href="notebooks/trace_estimation.ipynb">notebook</a> (in progress)</p>
-<h2>Other materials</h2>
-<p>The textbook I wrote for the NCSU scientific computing course I taught: <a href="miscellany/ma402notes.pdf.zip">Mathematics of Scientific Computing</a> (ZIP file, 9MB)</p>
-<p>The <a href="miscellany/lecture00.pdf">opening lecture notes</a> for the UC Berkeley course in discrete mathematics that I taught</p>
-<p>Sample <a href="miscellany/lectureNotes3.pdf">lecture slides</a> for the UC Berkeley course on MATLAB that I taught</p>
-<p>A collection of <a href="miscellany/puzzles.pdf">puzzles</a> related to the aforementioned discrete mathematics course</p>
-<p>A solution to a <a href="miscellany/riddler.pdf">Riddler</a> problem I wrote up</p>
+
+<header>
+    <h1>Eric Hallman</h1>
+    <!-- <p class="site-description">Once and future mathematician</p> -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="./research.html">Research</a>
+        <a href="./misc.html">Miscellany</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="main">
+        <div class="wp-block-image">
+            <figure class="alignleft">
+                <img src="./figure_waving.png" width=300px height=200px>
+            </figure>
+        </div>
+        <p>Hello there! I'm Eric, currently working as an applied researcher at eBay.</p>
+        <p>I received my PhD from UC Berkeley in 2019, where I worked with my advisor Ming Gu on problems in numerical linear algebra. Following that, I was a postdoc with the <a href="https://wp.math.ncsu.edu/rna/">Randomized Numerical Analysis RTG</a> at NCSU and a software engineer at Google.</p>
+    </div>
+
+    <!-- <div class="secondary">
+        <h3>Secondary Content</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus, felis at facilisis auctor, felis elit tincidunt nunc, non accumsan purus velit vel neque.</p>
+    </div> -->
+</div>
+
 </body>
 </html>
+
+<!-- jupyter nbconvert --to html --TemplateExporter.exclude_input_prompt=True --TemplateExporter.exclude_output_prompt=True <your_file>.ipynb -->
